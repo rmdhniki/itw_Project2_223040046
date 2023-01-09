@@ -1,0 +1,70 @@
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #faebd7;
+}
+
+#project {
+  background-color: #570808;
+}
+
+/* services section */
+.box {
+  position: relative;
+  background-color: #570808;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.box-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.box:hover .box-name {
+  top: 35px;
+  opacity: 1;
+}
+
+.range-harga {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.box:hover .range-harga {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.akustik-img {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  max-width: 350px;
+  transform: translate3d(-50%, -52%, 100px);
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.box:hover .akustik-img {
+  transform: translate3d(-50%, -52%, 100px); rotate(-10deg) scale(1.2);
+}
+
+#projects {
+  background-color: #faebd7;
+}
+
+.section {
+  padding-top: 5rem;
+}
